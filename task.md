@@ -1,0 +1,32 @@
+# Tasks
+
+- [x] Initialize directories and setup configuration files
+  - [x] Create `package.json` for client and server
+  - [x] Configure Tailwind CSS and Vite config for client
+  - [x] Configure environment template `.env.example` for client and server
+- [x] Build Backend Core and Services
+  - [x] Implement Mongoose Schemas with compound indexes (`User`, `Project`, `Evaluation`, `Deadline`)
+  - [x] Implement backend configuration (`db.js`, `cloudinary.js`, `corsOptions.js`)
+  - [x] Implement request validators, auth middlewares, and role guards
+  - [x] Implement backend services (`storageService.js` for direct signed upload/local fallback, `reportService.js` for CSV metrics, `notificationService.js`)
+  - [x] Implement custom error handlers and express bootstrap `app.js` and `server.js`
+- [x] Build Backend Controllers and Routing
+  - [x] Implement `authController.js` and `authRoutes.js`
+  - [x] Implement `projectController.js` and `projectRoutes.js` (including `/upload-url` and integrity checksum checks)
+  - [x] Implement `evalController.js` and `evalRoutes.js` (phase-based grading)
+  - [x] Implement `deadlineController.js` and `deadlineRoutes.js`
+  - [x] Implement `adminController.js` and `adminRoutes.js`
+- [x] Build Frontend Foundation
+  - [x] Set up Tailwind CSS styles, layout files, and global `index.css`
+  - [x] Implement `AuthContext.jsx` and `ThemeContext.jsx`
+  - [x] Implement API client layers (`api.js`, services) and utility helpers
+  - [x] Set up router controls (`ProtectedRoute.jsx`, Layout wrappers)
+- [x] Build Frontend Dashboard & Pages
+  - [x] Develop authentication pages (`Login.jsx`, `Register.jsx`)
+  - [x] Develop Student Dashboard, direct file submission, and evaluation stepper views
+  - [x] Develop Faculty queue, preview layout, and phase evaluation modal
+  - [x] Develop Admin dashboard, charts, deadline editor, user assignments, and exports
+- [x] Integration and Final Verification
+  - [x] Run both client and server to verify operation
+  - [x] Confirm direct upload fallback, group lock indexing, and multi-stage evaluation pipelines
+  - [x] Create `walkthrough.md` with operational summaries
